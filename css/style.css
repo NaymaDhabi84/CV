@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria;
+}
+
+.print-area{
+    width: 80%;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background-color: #ff6781;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+}
+
+.header-text {
+    color: black;
+    width: 70%;
+    margin-left: auto;
+}
+
+.header-text h1 {
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.header-text p{
+    font-size: 20px;
+    color: black;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+
+.left-area{
+    width: 30%;
+    background-color: lightgray;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.left-area .contact{
+    margin-top: 120px;
+    padding: 0 40px;
+}
+
+.contact h4{
+    font-size: 25px;
+    font-weight: normal;
+    margin: 40px 0 20px;
+    font-weight: bold;
+}
+.contact h5{
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.contact h6{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.contact p{
+    font-size: 15px;
+}
+.soft-skills{
+    margin-top: 20px;
+}
+.soft-skills h2, .hard-skills h2{ 
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.bars{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+}
+.bars .bar p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.bar span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: gray;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.soft-skills .bar span::before{
+    width: 90%;
+}
+
+.hard-skills .bar-100 span::before{
+    width: 100%;
+}
+
+.hard-skills .bar-5 span::before{
+    width: 5%;
+}
+
+.hard-skills .bar-25 span::before{
+    width: 25%;
+}
+
+.hard-skills .bar-30 span::before{
+    width: 30%;
+}
+.bar span::before{
+    position: absolute;
+    content:"";
+    width: 80%;
+    height: 80%;
+    background-color: #ff6781;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+.follow{
+    margin: 80px 80px 0;
+}
+
+.follow ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow ul a{
+    font-size: 30px;
+    color: #ff6781;
+}
+
+.follow ul a:hover{
+    color: #333333;
+}
+
+.right-area{
+    width: 70%;
+}
+.right-area h1{
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 70px;
+    position: relative;
+    margin-top: 20px;
+}
+.right-area h1 span{
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    right: 0;
+    bottom: 0;
+    font-size: 40px;
+    color:lightgray;
+}
+.right-area p{
+    padding-right: 30px;
+    text-align: justify;
+    font-size: 17px;
+    color: black;
+    margin-top: 10px;
+}
+
+/* Experiência Profissional */
+.work-group{
+    margin: 30px 0;
+}
+.work .work-group{
+    position: relative;
+    padding-left: 70px;
+}
+.work-group h3{
+    font-size: 22px;
+    font-weight: bold;
+}
+.work-group h4{
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
+.work-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Educação */
+.education{
+    margin-top: 30px;
+}
+.edu-group{
+    position: relative;
+    padding-left: 70px;
+    margin: 30px 0;
+}
+.edu-group h4{
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
+.edu-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* Experiência Internacional */
+.inter-group{
+    margin: 30px 0;
+}
+.interchange .inter-group{
+    position: relative;
+    padding-left: 70px;
+}
+.inter-group h3{
+    font-size: 22px;
+    font-weight: bold;
+}
+.inter-group h4{
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
+.inter-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Cursos */
+.courses-group{
+    margin: 30px 0;
+}
+.extra-courses .courses-group{
+    position: relative;
+    padding-left: 70px;
+}
+.courses-group h3{
+    font-size: 22px;
+    font-weight: bold;
+}
+.courses-group h4{
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
+.courses-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* Genérico */
+.work-group ul, .edu-group ul, .inter-group ul, .courses-group ul{
+    list-style: none;
+}
+
+.work-group hr, .edu-group hr, .inter-group hr, .courses-group hr{
+    margin: 15px 30px 15px 0;
+}
+
+.work-group span, .edu-group span, .inter-group span, .courses-group span{
+    padding-right: 30px;
+}
+
+
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 140px;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 5);
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px rgb(0, 0, 0, 5);
+
+}
+
+@media print {
+    body *{
+        visibility: hidden;
+    }
+    print-area * {
+        visibility: visible;
+
+    }
+}
